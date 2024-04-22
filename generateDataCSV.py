@@ -23,6 +23,9 @@ def process_data(path, image_links_path, output_file):
             else:
                 row[col_name] = None  
         return row
+    
+
+    df = df.apply(generate_image_columns, axis=1)
 
     # Create the FinalData folder if it doesn't exist
     if not os.path.exists("FinalData"):
