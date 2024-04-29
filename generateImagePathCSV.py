@@ -25,6 +25,7 @@ if __name__ == "__main__":
     for directory in directories:
         # Extract image paths
         image_paths = get_file_paths(directory)
+        image_paths.reverse()
 
         csv_filename = f'image_paths_{os.path.basename(os.path.normpath(directory))}.csv'
 
