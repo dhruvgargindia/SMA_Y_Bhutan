@@ -199,7 +199,7 @@ plt.rcParams.update({'axes.labelsize': 18,
                      'ytick.labelsize': 14})
 
 import openai
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = ''
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
